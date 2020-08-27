@@ -17,3 +17,13 @@ class PostTest(TestCase):
         }
 
         self.assertEqual(expected, p.json())
+
+    def test_repr(self):
+        p = Post('Test', 'Test Content')
+
+        expected = {
+            'title': 'Test',
+            'content': 'Test Content',
+        }
+
+        self.assertEqual(expected, p.__repr__())
