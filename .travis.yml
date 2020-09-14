@@ -1,4 +1,6 @@
 language: python
+env:
+ - PYTHONPATH='pwd'
 python:
   - "3.6"
   - "nightly"
