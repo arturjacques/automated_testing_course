@@ -8,5 +8,3 @@ install:
   - "pip install pytest"
   - "pip install -r requirements.txt"
 script: cd section7/starter_code/ && python -m pytest
-only:
-  - braches
